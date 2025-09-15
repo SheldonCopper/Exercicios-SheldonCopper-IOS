@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Usa 100% da tela -->
+    <link rel="shortcut icon" href="formulario.png" type="image/x-icon"> <!--Icone da pagina-->
+    <title>Cadastro</title> <!--Titulo da pagina-->
+</head>
+<body>
+    <h1>Cadastro no Curso de Informatica</h1>
+    <hr> <!--Linha Horizontal-->
+    <form action="coisa.php" method="post">
+        <!--Abre um formulario. Action e method envia as informaçoes para o lugar informado.-->
+        <p>
+            <label for="nome1">Nome Completo:</label> <!--Da o nome ao input (necessario)-->
+            <input type="text" name="nomecompleto" id="nome1" placeholder="Digite seu nome" required>
+            <!--Placeholder coloca a "dica" e "required" deixa como necessario para enviar-->
+        </p> <!--Essa parte e para colocar uma area de informar o nome-->
+        <p>
+            <label for="idade1">Idade</label>
+            <input type="number" name="ídade" id="idade1" placeholder="Informe sua idade" required>
+        </p> <!--Area de informar a idade-->
+        <p>
+            <label for="email1">E-mail:</label>
+            <input type="email" name="email" id="email1" placeholder="Digite seu e-mail" required>
+        </p> <!--Informar email-->
+        <p>
+            <label for="senha1">Senha:</label>
+            <input type="password" name="senha" id="senha1" placeholder="Digite sua senha" required>
+        </p> <!--Informar senha-->
+        <br>
+        <p>
+            Turma: <br>
+            <input type="radio" name="turma" id="manhã1">
+            <label for="manhã1">Manhã</label>
+            <input type="radio" name="turma" id="Tarde1">
+            <label for="Tarde1">Tarde</label>
+            <input type="radio" name="turma" id="noite1">
+            <label for="noite1">Noite</label>
+        </p> <!--Abre uma seleção, como a resposta de uma prova.-->
+        <br>
+        <p>
+            Interesse: <br>
+            <input type="checkbox" name="curso" id="web">
+            <label for="web">Programação</label>
+            <input type="checkbox" name="curso" id="desing1">
+            <label for="desing1">Desing</label>
+            <input type="checkbox" name="curso" id="games1">
+            <label for="games1">Games</label>
+            <input type="checkbox" name="curso" id="redes1">
+            <label for="redes1">Games</label>
+        </p> <!--Uma area de multipla escolha-->
+        <br>
+        <p>
+            Cidade:
+            <select name="cidade" id="cidade1">
+                <option value="Selecione">Selecione...</option>
+                <option value="">São Paulo</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">Outro</option>
+            </select>
+        </p> <!--(muito util) Cria uma area para seleçao de itens, como o pais de origem, por exemplo.-->
+        <p>
+            <label for="msg1">Mensagem:</label> <br>
+            <textarea name="mensagem" id="msg1" placeholder="O que quer nos dizer hoje?" cols="60" rows="10"></textarea>
+        </p> <!--Abre a seção de digitar um texto para enviar, como um comentario ou avaliação, por exemplo.-->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> <!--Envia ou limpa o formulario-->
+    </form>
+    <!--Ou seja, um formulario com diversas areas, como as seções de inserir nome, senha, email. Escolha unica e multipla. Opçoes em lista e area de comentario-->
+</body>
+</html>
